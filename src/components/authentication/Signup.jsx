@@ -36,10 +36,12 @@ function Signup() {
 
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center gap-y-3">
-      <div className="text-center flex gap-3 items-center justify-center mb-2">
-        <LuOrbit className="text-3xl text-sky-800" />
-        <h1 className="font-medium text-2xl text-blue-950">File Orbit</h1>
-      </div>
+        <Link to={"/"}>
+          <div className="text-center flex gap-3 items-center justify-center mb-2">
+            <LuOrbit className="text-3xl text-sky-800" />
+            <h1 className="font-medium text-2xl text-blue-950">File Orbit</h1>
+          </div>
+        </Link>
       <div className="bg-white p-8 rounded-md shadow-md w-[95vw] sm:w-96">
         <h2 className="text-2xl font-semibold mb-4 text-gray-700">Sign Up</h2>
         <form onSubmit={handleSubmit}>

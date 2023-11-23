@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./drive/Navbar";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -21,8 +22,7 @@ const HomePage = () => {
           </h2>
           <ul className="list-disc pl-6 text-gray-700 mb-6 ">
             <li>
-              Effortless File Uploads: Easily upload files of any type or size
-              to your account.
+              Effortless File Uploads: Easily upload files to your account.
             </li>
             <li>
               Intuitive Folder Organization: Create, rename, and organize
@@ -57,11 +57,19 @@ const HomePage = () => {
             Start your journey with File Orbit today and experience the
             convenience of organized and secure file management.
           </p>
+          <Link
+            to={"/login"}
+            className="px-3 py-2 bg-sky-700 text-white rounded-md"
+          >
+            Login
+          </Link>
         </div>
+
         <p className="text-lg bg-orange-100 px-4 py-2 rounded-md mb-6 animate__animated animate__flash animate__infinite animate__slower">
           ⚠️ Caution: Right now it is under development stage, all of you
           current stored files may get deleted! We recommend you to keep a
-          backup!
+          backup! Also because it is using a free tier storage, therefore there
+          is a size limitaiton!
         </p>
       </div>
     </div>
