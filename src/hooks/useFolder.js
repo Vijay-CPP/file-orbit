@@ -24,22 +24,22 @@ function reducer(state, action) {
                 folder: action.payload.folder,
                 folderId: action.payload.folderId,
                 childFiles: [],
-                childFolders: []
+                childFolders: [],
             }
         case ACTIONS.UPDATE_FOLDER:
             return {
                 ...state,
-                folder: action.payload.folder
+                folder: action.payload.folder,
             }
         case ACTIONS.SET_CHILD_FOLDERS:
             return {
                 ...state,
-                childFolders: action.payload.childFolders
+                childFolders: action.payload.childFolders,
             }
         case ACTIONS.SET_CHILD_FILES:
             return {
                 ...state,
-                childFiles: action.payload.childFiles
+                childFiles: action.payload.childFiles,
             }
         default:
             return state
@@ -51,7 +51,7 @@ export function useFolder(folderId = null, folder = null) {
         folderId,
         folder,
         childFolders: [],
-        childFiles: []
+        childFiles: [],
     }
 
     const { user } = useUserAuth()

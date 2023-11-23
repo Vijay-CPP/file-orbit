@@ -25,7 +25,7 @@ const HomePage = () => {
               Effortless File Uploads: Easily upload files to your account.
             </li>
             <li>
-              Intuitive Folder Organization: Create, rename, and organize
+              Intuitive Folder Organization: Create, and organize
               folders for efficient file management.
             </li>
             <li>
