@@ -20,7 +20,7 @@ function Signup() {
       await signUp(email, password);
       navigate("/login");
     } catch (error) {
-      toast.error(error);
+      toast.error(error.message);
     }
   };
 
@@ -30,7 +30,7 @@ function Signup() {
       await googleSignIn();
       navigate("/dashboard");
     } catch (error) {
-      toast.error(error);
+      toast.error(error.message);
     }
   };
 

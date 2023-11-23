@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useUserAuth } from "../../context/UserAuthContext";
 import { FcGoogle } from "react-icons/fc";
@@ -19,7 +19,7 @@ function Login() {
       await logIn(email, password);
       navigate("/dashboard");
     } catch (error) {
-      toast.error(error);
+      toast.error(error.message);
     }
   };
 
@@ -29,7 +29,7 @@ function Login() {
       await googleSignIn();
       navigate("/dashboard");
     } catch (error) {
-      toast.error(error);
+      toast.error(error.message);
     }
   };
 
