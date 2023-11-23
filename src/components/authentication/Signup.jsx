@@ -35,7 +35,7 @@ function Signup() {
   };
 
   return (
-    <div className="bg-gray-100 h-screen flex flex-col items-center justify-center gap-y-3">
+    <div className="bg-gray-100 min-h-screen flex flex-col items-center justify-center gap-y-3">
       <div className="text-center flex gap-3 items-center justify-center mb-2">
         <LuOrbit className="text-3xl text-sky-800" />
         <h1 className="font-medium text-2xl text-blue-950">File Orbit</h1>
